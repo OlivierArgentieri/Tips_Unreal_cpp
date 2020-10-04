@@ -7,7 +7,9 @@ AMaClassePlayer m_Player = Cast<AMaClassePlayer>(UGameplayStatics::GetPlayerChar
 
 ## Debug.Log()
 text : GEngine->AddOnScreenDebugMessage(-1, 10, FColor::Green, "Hey");
+
 Vector : GEngine->AddOnScreenDebugMessage(-1, 10, FColor::Green, FString::Printf(TEXT("Vector : %s"), *GetActorLocation().ToString()));
+
 console : UE_LOG(LogTemp, Warning, TEXT("Hey"));
 
 ## Virtual Method
